@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Focus Balance</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>🧠 Focus Balance</h1>
+
+    <div id="balanceCard" class="card">
+      <div class="row">
+        <div class="big" id="balanceText">0 min</div>
+        <div class="sub" id="needText">To break even: 0 min</div>
+      </div>
+      <div class="row">
+        <div class="chip">Daily goal: <span id="targetText">120</span> min</div>
+        <div class="chip">Today: <span id="todayText">—</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Quick Actions</h2>
+      <div class="grid">
+        <input id="workInput" type="number" inputmode="numeric" placeholder="+ Work (min)" />
+        <button id="workBtn" class="btn plus">+ Add Work</button>
+        <input id="relaxInput" type="number" inputmode="numeric" placeholder="- Relax (min)" />
+        <button id="relaxBtn" class="btn minus">- Add Relax</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Daily Target</h2>
+      <div class="grid">
+        <input id="targetInput" type="number" inputmode="numeric" placeholder="Set target (min)" />
+        <button id="targetBtn" class="btn">Save Target</button>
+      </div>
+      <p class="hint">Every day at 00:01 IST your balance is reduced by your target.</p>
+    </div>
+
+    <footer>
+      <span>Dark · Mobile-first · Works offline while running</span>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
